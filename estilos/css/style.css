@@ -280,6 +280,7 @@ body{
 .navbar__redes{
     display: flex;
     flex-direction: column;
+    gap: .8rem;
 
 }
 
@@ -296,6 +297,7 @@ body{
 .navbar__info{
     display: flex;
     flex-flow: column wrap;
+    gap: .8rem;
 }
 
 /* CURSOS */
