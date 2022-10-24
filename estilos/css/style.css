@@ -84,8 +84,8 @@ body{
 }
 
 .header__logo{
-    min-width: 180px;
-    max-width: 180px;
+    min-width: 280px;
+    max-width: 280px;
     /* margin: 1px; */
     /* border-radius: 50px; */
     /* border: solid darkgoldenrod; */
@@ -125,7 +125,7 @@ body{
 
 /*BANNER*/
 
-#banner img{
+.banner img{
     display: grid;
     place-items: center;
     width: 100%;
@@ -151,6 +151,7 @@ body{
     justify-content: center;
     align-items: flex-end;
     padding: 8rem;
+    
 }
 
 .infocurso__h1{
@@ -688,6 +689,8 @@ body{
     border-radius: 1rem;
     color: blue;
 }
+
+/*CONTACTO*/
 
 .form{
     display: block;
