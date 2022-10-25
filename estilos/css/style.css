@@ -321,17 +321,18 @@ body{
     display: flex;
     flex-flow: column;
     flex: 1 1 50%;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
-    padding: 1.6rem;
+    padding: var(--sp-s);
     gap: 1rem;
 }   
 .curso__b {
     display: flex;
     flex-flow: column;
     flex: 1 1 50%;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
+    padding: var(--sp-s);
     gap: 1rem;
 }  
 
@@ -343,19 +344,19 @@ body{
     display: flex;
     flex-flow: column;
     flex: 1 1 50%;
-    align-items: flex-end;
+    align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding: 1.6rem;
+    padding: var(--sp-s);
 }   
 .curso__d {
     display: flex;
     flex-flow: column;
     flex: 1 1 50%;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 1rem;
-    padding: 1.6rem;
+    padding: var(--sp-s);
 }   
 
 .curso__imagen{
