@@ -1,0 +1,140 @@
+/*FOOTER*/
+
+.navbar{
+    background-color: $primary;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    
+    .navbar__link{
+        text-decoration: none;
+        color: $accent;
+        padding: $sp-s;
+        font-size: $text-xs;
+        
+        .navbar__logo{
+            min-width: 180px;
+            max-width: 180px;
+        }
+
+    }
+
+    #pie{
+        display: flex;
+    
+        .navbar__redes{
+            display: flex;
+            flex-direction: column;
+            gap: .8rem;
+
+            .navbar__col{
+                list-style-type: none;
+                transition: all .3s ease-in-out;
+                border-radius: .2rem;
+
+                .navbar__col:hover{
+                    background-color: $second;
+                    color: $accent;
+                }
+
+            }
+        
+        }
+    
+        .navbar__info{
+            display: flex;
+            flex-flow: column wrap;
+            gap: .8rem;
+        }
+    }
+
+}
+
+
+/*MEDIA*/
+
+@media only screen and (max-width: 480px){
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pie{
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (max-width: 635px){
+    .header__nav{
+        flex-direction: column;
+        align-items: center;
+        font-size: $text-xs;
+    }
+    .header__menu{
+        flex-direction: column;
+        align-items: initial;
+        gap: $sp-xs;
+        padding: $sp-xs;
+        justify-content: center;
+    }
+    .header__col{
+        text-align: center;
+        margin:0px;
+        padding: $sp-xs;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pie{
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .header__nav{
+        flex-direction: column;
+        align-items: center;
+        font-size: $text-xs;
+    }
+    .header__menu{
+        /* flex-direction: column;
+        align-items: initial;
+        gap: var(--sp-xs);
+        padding: var(--sp-xs); */
+        justify-content: center;
+    }
+    .header__col{
+        text-align: center;
+        margin:0px;
+        padding: $sp-xs;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pie{
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: space-around;
+    }
+}

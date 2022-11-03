@@ -1,0 +1,38 @@
+/*CONTACTO*/
+
+.form{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+
+    .box1{
+        background-color: grey;
+        width: ($ancho/2);
+    }
+
+    .box2{
+        background-color: $blue;
+        width:($ancho/2)-350;
+    }
+    
+    .box3{
+        background-color: $green;
+        width: ($ancho/2)-150;
+    }
+
+    .form__titulo{
+        text-align: center;
+    }
+    
+    .form__complete{
+        background-color: rgb(255, 255, 255);
+        text-align: left;
+        
+        .form__input{
+            background-color: rgba(255, 255, 255, 0.158);
+            
+        }
+    }
+}
+
+

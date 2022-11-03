@@ -1,0 +1,61 @@
+/*NOSOTROS*/
+
+.vision{
+    display: block;
+    width: 400px;
+    margin: 0 auto;
+
+    .vision__post{
+        background-color: rgba(32, 32, 32, 0.11);
+        margin: 1rem 0;
+        border-radius: 2rem;
+        padding: 1rem 0;
+        
+    
+    }
+    
+    .vision__titulo{
+        text-align: center;
+        font-size: 2rem;
+        margin-top: 1rem;
+        font-family: 'Inria Serif', serif;
+    }
+
+    .vision__visual{
+        width: 400px;
+        padding: 1rem;
+    }
+    
+    .vision__video{
+        width: 400px;
+        padding: 1rem;
+        
+    }
+    
+    .vision__audio{
+        display: block;
+        width: 400px;
+        padding: 1rem;
+    }
+    
+    .vision__desc{
+        text-align: center;
+        padding: 2rem;
+        font-family: 'Montserrat', sans-serif; ;
+    
+    }
+    
+    
+    .vision__anchor{
+        position: relative;
+        left: 170px;
+        bottom: 5px;
+        text-decoration: none;
+        background-color: white;
+        border: solid 0.4rem white;
+        border-radius: 1rem;
+        color: blue;
+    }
+
+}
+

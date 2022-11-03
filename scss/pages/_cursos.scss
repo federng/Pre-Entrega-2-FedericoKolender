@@ -1,0 +1,234 @@
+/* CURSOS */
+
+.allinfo{
+
+    #distribh{
+        background-color: $primary;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .caja1{
+            display: flex;
+            flex-flow: column;
+    
+            .curso__a {
+                display: flex;
+                flex-flow: column;
+                flex: 1 1 50%;
+                align-items: center;
+                justify-content: center;
+                padding: $sp-s;
+                gap: 1rem;
+    
+                .curso__imagen{
+                    display: flex;
+                    align-self: center;
+                    
+                }
+    
+                .curso__text{
+                    align-self: center;
+                    color: $accent;
+                    font-size: $text-xs;
+                    max-width: 300px;
+                    padding: 1.2rem;
+                }
+                
+                .curso__link{
+                    text-decoration: none;
+                    color: $accent;
+                    align-self: center;
+                    font-size: $text-s;
+                }
+                
+                .curso__link:hover{
+                    background-color: $second;
+                    transition: all .3s ease-in-out;
+                    border-radius: .5rem;
+                }
+    
+            }   
+            
+            .curso__b {
+                display: flex;
+                flex-flow: column;
+                flex: 1 1 50%;
+                align-items: center;
+                justify-content: center;
+                padding: $sp-s;
+                gap: 1rem;
+
+                .curso__text{
+                    align-self: center;
+                    color: $accent;
+                    font-size: $text-xs;
+                    max-width: 300px;
+                    padding: 1.2rem;
+                }
+            }  
+        }
+        
+        .caja2{
+            display: flex;
+    
+            .curso__c {
+                display: flex;
+                flex-flow: column;
+                flex: 1 1 50%;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                padding: $sp-s;
+
+                .curso__text{
+                    align-self: center;
+                    color: $accent;
+                    font-size: $text-xs;
+                    max-width: 300px;
+                    padding: 1.2rem;
+                }
+            }   
+            .curso__d {
+                display: flex;
+                flex-flow: column;
+                flex: 1 1 50%;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                padding: $sp-s;
+
+                .curso__text{
+                    align-self: center;
+                    color: $accent;
+                    font-size: $text-xs;
+                    max-width: 300px;
+                    padding: 1.2rem;
+                }
+            }   
+        }
+    
+    }
+    
+    
+    #dimas{
+        background-color: $primary;
+    
+        .section2{
+    
+            .section2__title{
+                font-size: $text-l;
+                padding: $sp-s;
+                color: $second;
+                text-align: center;
+            }
+            
+            .section2__text{
+                font-size: $text-s;
+                color: $accent;
+                text-align: center;
+                padding: $sp-s;
+            }
+    
+        }
+        
+        .banner__video{
+            background-color: $primary;
+            
+            .video{
+                width: 100%;
+            }
+        }
+        
+    
+    }
+    
+
+}
+
+/*MEDIA*/
+
+@media only screen and (max-width: 480px){
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pie{
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (max-width: 635px){
+    .header__nav{
+        flex-direction: column;
+        align-items: center;
+        font-size: $text-xs;
+    }
+    .header__menu{
+        flex-direction: column;
+        align-items: initial;
+        gap: $sp-xs;
+        padding: $sp-xs;
+        justify-content: center;
+    }
+    .header__col{
+        text-align: center;
+        margin:0px;
+        padding: $sp-xs;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pie{
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .header__nav{
+        flex-direction: column;
+        align-items: center;
+        font-size: $text-xs;
+    }
+    .header__menu{
+        /* flex-direction: column;
+        align-items: initial;
+        gap: var(--sp-xs);
+        padding: var(--sp-xs); */
+        justify-content: center;
+    }
+    .header__col{
+        text-align: center;
+        margin:0px;
+        padding: $sp-xs;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pie{
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: space-around;
+    }
+}

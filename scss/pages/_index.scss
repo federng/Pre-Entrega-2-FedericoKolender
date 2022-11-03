@@ -1,0 +1,306 @@
+
+/*BANNER*/
+
+.banner img{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    /* min-width: 180px;
+    max-width: 180px; */
+}
+
+/*HOME MAIN*/
+
+
+
+
+#infocurso{
+    display: flex;
+    background: $primary;
+    
+
+    .infocurso__box1{
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 50%;
+        justify-content: center;
+        align-items: center;
+        padding: 8rem;
+        
+        .infocurso__h1{
+            display: block;
+            align-self: center;
+            font-size: $text-xxl;
+            color: $second;
+        }
+        
+        .infocurso__parrafo{
+            padding: 2.2rem;
+            font-size: $text-m;
+            color: $accent;
+        }
+
+    }
+
+
+    .infocurso__box2{
+        display: grid;
+        flex: 1 1 50%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 0.8rem;
+
+        .infocurso__integral {
+            grid-column: 2;
+            grid-row: 1;
+            align-self: end;
+        }
+        
+        .infocurso__basico {
+            grid-column: 1;
+            grid-row: 1;
+            align-self: end;
+            justify-self: self-end;
+            padding: .8rem;
+        }
+        
+        
+        .infocurso__avanzado {
+            grid-column: 1;
+            grid-row: 2;
+            align-self: start;
+            justify-self: flex-end;
+        }
+        
+        
+        .infocurso__fundamental {
+            grid-column: 2;
+            grid-row: 2;
+            align-self: start;
+            justify-self: start;
+            padding: .8rem;
+        }
+
+
+    }
+    
+
+    
+
+}
+
+
+
+/*SECCION 2*/
+
+#infoextra{
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: center;
+    padding: 3.2rem;
+
+    .infoextra__h2{
+        text-align: center;
+    }
+    
+    .infoextra__icons{
+        display: flex;
+        flex-flow: row-wrap;
+        gap: $sp-s;
+        align-items: center;
+
+        .infoextra__parrafo{
+            text-align: center;
+        }
+    }
+    
+}
+
+
+/*CONDICIONADOR*/
+
+
+.bg_primary{
+    background-color: $primary;
+}
+.bg_second{
+    background-color: #E43B4F;
+}
+
+.boton--general{
+    text-align: center;
+    font-size: 2rem;
+    background-image: radial-gradient(circle, #388181, #326a6a, #2c5454, #253f3f, #1d2b2b, #192323, #161a1a, #111212, #111212, #111212, #101212, #101212);
+}
+
+/*MEDIA INDEX*/
+
+
+@media only screen and (max-width: 480px){
+    
+    .infocurso__box1{
+        align-items: center;
+    }
+
+    .infocurso__h1{
+        padding: $sp-s;
+    }
+
+    .infocurso__box2{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .infocurso__box2 img{
+        padding: $sp-xs;
+    }
+
+    .infocurso__box2 figure{
+        padding: 0px;
+    }
+
+    
+    .infoextra__icons{
+        justify-content: center;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pie{
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: space-around;
+    }
+
+}
+
+@media only screen and (max-width: 635px){
+    .header__nav{
+        flex-direction: column;
+        align-items: center;
+        font-size: $text-xs;
+    }
+    .header__menu{
+        flex-direction: column;
+        align-items: initial;
+        gap: $sp-xs;
+        padding: $sp-xs;
+        justify-content: center;
+    }
+    .header__col{
+        text-align: center;
+        margin:0px;
+        padding: $sp-xs;
+    }
+    #infocurso{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .infocurso__box1{
+        flex-direction: column;
+        justify-content: center;
+        padding: $sp-xs;
+        
+    }
+
+    .infocurso__h1{
+        font-size: 1.8em;
+    }
+
+    .infocurso__parrafo{
+        font-size: 1.2em;
+    }
+
+    .infocurso__link{
+        font-size: 1.4em;
+    }
+
+    .infocurso__box2 img{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 100%;
+
+        /* grid-template-columns: 1;
+        grid-template-rows: auto;
+        justify-items: end;
+        overflow:auto; */
+        
+    }
+
+
+    .infoextra__icons{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pie{
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .header__nav{
+        flex-direction: column;
+        align-items: center;
+        font-size: $text-xs;
+    }
+    .header__menu{
+        /* flex-direction: column;
+        align-items: initial;
+        gap: var(--sp-xs);
+        padding: var(--sp-xs); */
+        justify-content: center;
+    }
+    .header__col{
+        text-align: center;
+        margin:0px;
+        padding: $sp-xs;
+    }
+
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .caja2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #pie{
+        display: flex;
+        flex-direction: row;
+        align-self: stretch;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width: 1110px){
+    #infocurso{
+        display: flex;
+        flex-direction: column;
+    }
+    .infocurso__box1{
+        display: flex;
+        /* flex-direction: column-reverse; */
+        
+    }
+}
+
+/*FIN MEDIAS*/

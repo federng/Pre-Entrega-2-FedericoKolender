@@ -1,0 +1,24 @@
+/* SERVICIOS */
+
+#backone{
+    background-color: var(--primary);
+
+    .servicios__element{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 1.6rem;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        color: var(--accent);
+
+        .servicios__parrafo{
+            text-align: center;
+            color: var(--accent);
+            font-size: var(--text-xs);
+            max-width: 300px;
+            padding: 1.2rem;
+        }
+    }
+
+}

@@ -27,11 +27,13 @@
     />
 
     <link rel="stylesheet" href="./estilos/css/bootstrap.css">
-    <link rel="stylesheet" href="./estilos/css/style.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
 <body>
+
+    <!-- HEADER -->
 
     <header class="header">
         <nav class="header__nav">           
@@ -47,12 +49,16 @@
             </ul>
         </nav>        
     </header>
+
+    <!-- BANNER -->
     
     <div class="banner animate__animated animate__pulse">
             <img src="./multimedia/banner_5.jpg" alt="banner_imagen">
     </div>
     
     <main>
+        <!-- MENU PRINCIPAL CON GRID -->
+
         <section class="bg_primary">
             <div id="infocurso" class="container" >
                 <article class="infocurso__box1 animate__animated animate__fadeInLeft">
@@ -62,7 +68,7 @@
                     </p>
                     <a class="boton--general btn btn-secondary" href="http://bullmarket.com.ar" target="_blank" rel="noopener noreferrer">VER CURSOS</a>
                 </article>
-                <div class="infocurso__box2 container">
+                <article class="infocurso__box2 container">
                     <figure class="infocurso__integral animate__animated animate__fadeInTopRight">
                         <img class="infocurso__integral--1" src="./multimedia/curso_integral.png" alt="">
                     </figure>
@@ -75,9 +81,11 @@
                     <figure class="infocurso__fundamental animate__animated animate__fadeInBottomRight">
                         <img class="infocurso__fundamental--4" src="./multimedia/curso_fundamental.png" alt="">
                     </figure>
-                </div>
+                </article>
             </div>
         </section>
+
+        <!-- MENU SECUNDARIO PARA ICONOS -->
 
         <section class="bg_second">
             <div id="infoextra" class="container">
@@ -93,22 +101,22 @@
                     
                     <picture>
                         <img src="./multimedia/icon_1.png" alt="respaldo">
-                        <p>Respaldo 24/7 </p>
+                        <p class="infoextra__parrafo">Respaldo 24/7 </p>
                         
                     </picture>
                     <picture>
                         <img src="./multimedia/icon_2.png" alt="Todos los medios de pago">
-                        <p>Todos los medios de pagos</p>
+                        <p class="infoextra__parrafo">Todos los medios de pagos</p>
                         
                     </picture>
                     <picture>
                         <img src="./multimedia/icon_3.png" alt="Sin comisiones">
-                        <p>Sin comisiones en tus compras</p>
+                        <p class="infoextra__parrafo">Sin comisiones en tus compras</p>
 
                     </picture>
                     <picture>
                         <img src="./multimedia/icon_4.png" alt="Apredé Online">
-                        <p>Aprendé Online</p>
+                        <p class="infoextra__parrafo">Aprendé Online</p>
 
                     </picture>
                 </article>
@@ -117,6 +125,8 @@
             </div>
         </section>
     </main>
+
+    <!-- FOOTER -->
 
     <footer>
         <nav class="navbar">
