@@ -1,80 +1,76 @@
 /*HEADER REPEAT*/
 
-.header{
-    background: $primary;
 
-    .header__nav{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-
-        .header__logo{
-            min-width: 180px;
-            max-width: 180px;
-            /* margin: 1px; */
-            /* border-radius: 50px; */
-            /* border: solid darkgoldenrod; */
-            
-        }
-        
-        .header__menu{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: space-between;
-            align-items: center;
-            gap:var(--sp-s);
-            margin:0rem;
-
-            .header__col{
-                list-style-type: none;
-                transition: all .3s ease-in-out;
-                border-radius: .2rem;
-
-                &:hover{
-                    background-color: $second;
-                    color: $accent;
-                }
-                
-                .header__anchor{
-                    text-decoration: none;
-                    color: $accent;
-                    padding: $sp-s;
-                    font-size: $text-xs;
-                    
-                }
-
-            }
-            
-            
-
-        }
-        
-
-    }
+#headerbg{
+    background-color: $general;
     
+    
+    .navbar{
+        background-color: $general;
 
+        .navbar-toggler{
+            background-color: $accent;
+            transition: all .2s ease-in-out;
+            border-radius: .4rem;
+            
+            &:hover{
+                background-color: $accent;
+                padding: .9rem;
+            }
+
+            
+        }
+
+        .navbar-collapse{
+
+            .navbar-nav{
+                align-items: center;
+                gap: $sp-xs;
+    
+                .nav-item{
+
+                    transition: all .3s ease-in-out;
+                    border-radius: .3rem;
+
+                    &:hover{
+                        background-color: $second;
+                        padding: .5rem;
+                    }
+        
+                    .nav-link{
+                        color: $accent;
+                        font-size: 1.2em;
+                    }
+        
+                }
+    
+            }
+
+            .d-flex{
+                
+                .btn{
+                    color: $accent;
+                    border: solid 1px $second;
+                    &:hover{
+                        background-color: $second;
+                        
+                    }
+                }
+            }
+        }
+
+
+
+            
+        
+    }
 }
-
 
 /*MEDIA*/
 
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 490px){
 
-    .navbar{
-        display: flex;
-        flex-direction: column;
-    }
-
-    #pie{
-        display: flex;
-        flex-direction: row;
-        align-self: stretch;
-        justify-content: space-around;
-    }
-
+    
 }
 
 @media only screen and (max-width: 635px){
@@ -110,38 +106,67 @@
 }
 
 @media only screen and (max-width: 767px){
-    .header__nav{
-        flex-direction: column;
-        align-items: center;
-        font-size: $text-xs;
-    }
-    .header__menu{
-        /* flex-direction: column;
-        align-items: initial;
-        gap: var(--sp-xs);
-        padding: var(--sp-xs); */
-        justify-content: center;
-    }
-    .header__col{
-        text-align: center;
-        margin:0px;
-        padding: $sp-xs;
-    }
+    
+    .header{
+        font-size: $sp-xs;
 
-    .navbar{
-        display: flex;
-        flex-direction: column;
-    }
+        // .header__nav{
+            
+        //     .header__logo{
 
-    .caja2{
-        display: flex;
-        flex-direction: column;
-    }
+        //     }
+            
+        // }
+        // .header__menu{
+        //     .header__col{
+        //         .header__anchor{
 
-    #pie{
-        display: flex;
-        flex-direction: row;
-        align-self: stretch;
-        justify-content: space-around;
+        //         }
+        //     }
+        // }
+    }
+    
+    // .header__nav{
+    //     flex-direction: column;
+    //     align-items: center;
+    //     font-size: $text-xs;
+    // }
+    // .header__menu{
+    //     /* flex-direction: column;
+    //     align-items: initial;
+    //     gap: var(--sp-xs);
+    //     padding: var(--sp-xs); */
+    //     justify-content: center;
+    // }
+    // .header__col{
+    //     text-align: center;
+    //     margin:0px;
+    //     padding: $sp-xs;
+    // }
+
+    // .navbar{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+    // .caja2{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+
+    // #pie{
+    //     display: flex;
+    //     flex-direction: row;
+    //     align-self: stretch;
+    //     justify-content: space-around;
+    // }
+}
+
+@media only screen and (max-width: 991px){
+    .form-control{
+        display: none;
+    }
+    .btn{
+        display: none;
     }
 }

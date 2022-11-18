@@ -1,19 +1,20 @@
 /*FOOTER*/
 
-.navbar{
-    background-color: $primary;
+.navbarra{
+    background-color: $general;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
+    overflow: hidden;
     
-    .navbar__link{
+    .navbarra__link{
         text-decoration: none;
         color: $accent;
         padding: $sp-s;
         font-size: $text-xs;
         
-        .navbar__logo{
+        .navbarra__logo{
             min-width: 180px;
             max-width: 180px;
         }
@@ -23,17 +24,17 @@
     #pie{
         display: flex;
     
-        .navbar__redes{
+        .navbarra__redes{
             display: flex;
             flex-direction: column;
             gap: .8rem;
 
-            .navbar__col{
+            .navbarra__col{
                 list-style-type: none;
                 transition: all .3s ease-in-out;
                 border-radius: .2rem;
 
-                .navbar__col:hover{
+                .navbarra__col:hover{
                     background-color: $second;
                     color: $accent;
                 }
@@ -42,14 +43,20 @@
         
         }
     
-        .navbar__info{
+        .navbarra__info{
             display: flex;
             flex-flow: column wrap;
             gap: .8rem;
         }
+   
+    }
+
+    .navbarra__cr{
+        background-color: blueviolet;
     }
 
 }
+
 
 
 /*MEDIA*/

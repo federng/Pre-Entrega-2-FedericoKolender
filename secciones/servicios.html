@@ -10,108 +10,160 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,400;1,400;1,700&family=Montserrat:wght@400;900&display=swap" rel="stylesheet">
     <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="../estilos/css/bootstrap.css">
 
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="header__nav">           
-            <a href="#" class="animate__animated animate__backInDown">
-                <img src="../multimedia/logo_little.png"Logo empresa" class="header__logo"">
-            </a>
-            <ul class="header__menu">
-                <li class="header__col"><a class="header__anchor" href="../index.html">Home</a></li>
-                <li class="header__col"><a class="header__anchor" href="./cursos.html">Cursos</a></li>
-                <li class="header__col"><a class="header__anchor" href="./servicios.html">Servicios</a></li>
-                <li class="header__col"><a class="header__anchor" href="./nosotros.html"> Nosotros</a></li>
-                <li class="header__col"><a class="header__anchor" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>        
+    <header id="headerbg">
+
+        <nav class="container navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img data-aos="fade-right" src="../multimedia/logo_little.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./cursos.html">Cursos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="./servicios.html">
+                      Servicios
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
     </header>
 
     <main id="backone">
 
-        <Section class=" container">
+        <Section class="container">
 
-            <div class="servicios__element">
+            <div class="servicios__element" data-aos="fade-up"
+            data-aos-duration="3000">
+                <h2 class="servicios__titulo" >¿Por qué invertir con Fly Inversiones?</h2>
+                <img class="servicios__img img-fluid service-img"  src="../multimedia/cambio1.jpg" alt="¿porque fly inversiones?">
+                <p class="servicios__parrafo">
+              +300 activos disponibles:
+              Invierte en los activos más populares del mundo
+              Desde industrias ya establecidas hasta las recién llegadas— escogeentre más de una docena de rutas diferentes de inversión
+                </p>
+            </div>
+
+            <div class="servicios__element" data-aos="fade-down"
+            data-aos-easing="linear"
+            data-aos-duration="1500">
                 <h2 class="servicios__titulo">            
                 Sumate a nuestro grupo de alertas de trading
                 </h2>
-                <img class="servicios__img img-fluid " src="../multimedia/servicios_1.png" alt="">
-                <p class="servicios__parrafo">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit blanditiis impedit minima natus in, porro dolore doloribus dolorum repudiandae mollitia.</p>
+                <img class="servicios__img img-fluid " src="../multimedia/servicios_1.png" alt="grupo de alerta de trading">
+                <p class="servicios__parrafo">Plataforma galardonada:
+                  Software premiado, reconocido y elogiado por los expertos más respetados de la industria..</p>
             </div>
 
-            <div class="servicios__element">
+            <div class="servicios__element" data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine">
                 <h2 class="servicios__titulo">
                 ¿Como funciona? 
                 </h2>
                 <img class="servicios__img img-fluid" src="../multimedia/servicios_2.png" alt="">
-                <p class="servicios__parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum repudiandae, ab optio porro ipsum laborum quasi suscipit maxime. Labore in debitis repudiandae dolore aut dolorem natus repellendus nam, voluptate eligendi.</p>
+                <p class="servicios__parrafo">Interfaz personalizable:
+                  Personaliza la plataforma para que se ajuste mejor a tus necesidades — desde el tipo de gráfico hasta el color.</p>
             </div>
 
-            <div class="servicios__element">
+            <div class="servicios__element" data-aos="flip-left"
+            data-aos-easing="ease-out-cubic"
+            data-aos-duration="2000">
                 <h2 class="servicios__titulo">Suscribite ahora</h2>
-                <img class="servicios__img img-fluid" src="../multimedia/servicios_3.jpg" alt="">
-                <p class="servicios__parrafo">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi, corrupti.</p>
-                <a class="boton--general btn btn-secondary" href="">Suscribirme</a>
+                <img class="servicios__img img-fluid" src="../multimedia/servicios_3.jpg" alt="comunidad de traders imagen">
+                <p class="servicios__parrafo"> Retiradas cómodas:
+                  Retire su dinero en un instante usando un amplio abanico de sistemas de pago disponibles.</p>
+                <a class="btn" href="./contacto.html" >Suscribirme</a>
             </div>
 
         </Section>
     </main>    
 
-<footer>
-    <nav class="navbar">
+    <footer>
+        <nav class="navbarra">
+            
+            <a class="navbarra__link" href=""> 
+                    <img class="navbarra__logo" src="../multimedia/logo_little.png" alt="logo imagen">
+            </a>
+
+            <div id="pie">
+                <ul class="navbarra__redes">
+                    <li class="navbarra__col">
+                        <a class="navbarra__link" href="https://twitter.com/?lang=es">Twitter</a>
+                    </li>
+                    <li class="navbarra__col">
+                        <a class="navbarra__link" href="https://www.instagram.com/">Instagram</a>
+                    </li>
+                    <li class="navbarra__col">
+                        <a class="navbarra__link" href="https://www.facebook.com/">Facebook</a>
+                    </li>
+                    <li class="navbarra__col">
+                        <a class="navbarra__link" href="https://www.linkedin.com">Linkedin</a>
+                    </li>
+                    <li class="navbarra__col">
+                        <a class="navbarra__link" href="https://mail.google.com/mail">Email</a>
+                    </li>
+                </ul>
+                <ul class="navbarra__info">
+                    <li class="navbarra__col">
+                        <a class="navbarra__link" href="../index.html">Home</a>
+                    </li>
+                    <li class="navbarra__col">
+                        <a class="navbarra__link" href="./cursos.html">Cursos</a>
+                    </li>
+                    <li class="navbarra__col">
+                        <a class="navbarra__link" href="./servicios.html">Servicios</a>
+                    </li>
+                    <li class="navbarra__col">
+                        <a class="navbarra__link" href="./nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="navbarra__col">
+                        <a class="navbarra__link" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
         
-        <a class="navbar__link" href=""> 
-                <img class="navbar__logo" src="../multimedia/logo_little.png" alt="logo imagen">
-        </a>
-
-        <div id="pie">
-            <ul class="navbar__redes">
-                <li class="navbar__col">
-                    <a class="navbar__link" href="https://twitter.com/?lang=es">Twitter</a>
-                </li>
-                <li class="navbar__col">
-                    <a class="navbar__link" href="https://www.instagram.com/">Instagram</a>
-                </li>
-                <li class="navbar__col">
-                    <a class="navbar__link" href="https://www.facebook.com/">Facebook</a>
-                </li>
-                <li class="navbar__col">
-                    <a class="navbar__link" href="https://www.linkedin.com">Linkedin</a>
-                </li>
-                <li class="navbar__col">
-                    <a class="navbar__link" href="https://mail.google.com/mail">Email</a>
-                </li>
-            </ul>
-            <ul class="navbar__info">
-                <li class="navbar__col">
-                    <a class="navbar__link" href="../index.html">Home</a>
-                </li>
-                <li class="navbar__col">
-                    <a class="navbar__link" href="./cursos.html">Cursos</a>
-                </li>
-                <li class="navbar__col">
-                    <a class="navbar__link" href="./servicios.html">Servicios</a>
-                </li>
-                <li class="navbar__col">
-                    <a class="navbar__link" href="./nosotros.html">Nosotros</a>
-                </li>
-                <li class="navbar__col">
-                    <a class="navbar__link" href="./contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    
-</footer>
+    </footer>
 
     <script src="../js/bootstrap.bundle.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 </html>

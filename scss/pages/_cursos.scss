@@ -24,6 +24,13 @@
                 .curso__imagen{
                     display: flex;
                     align-self: center;
+                    transition: all .3s ease-in-out;
+                    border-radius: 2rem;
+                    
+                    &:hover{
+                        padding: 1rem;
+                        cursor: pointer;
+                    }
                     
                 }
     
@@ -33,6 +40,7 @@
                     font-size: $text-xs;
                     max-width: 300px;
                     padding: 1.2rem;
+                    line-height: 2;
                 }
                 
                 .curso__link{
@@ -59,12 +67,22 @@
                 padding: $sp-s;
                 gap: 1rem;
 
+                .curso__imagen{
+                    transition: all .3s ease-in-out;
+                    border-radius: 2rem;
+                    
+                    &:hover{
+                        padding: 1rem;
+                        cursor: pointer;
+                    }
+                }
                 .curso__text{
                     align-self: center;
                     color: $accent;
                     font-size: $text-xs;
                     max-width: 300px;
                     padding: 1.2rem;
+                    line-height: 2;
                 }
             }  
         }
@@ -87,6 +105,7 @@
                     font-size: $text-xs;
                     max-width: 300px;
                     padding: 1.2rem;
+                    line-height: 2;
                 }
             }   
             .curso__d {
@@ -104,6 +123,7 @@
                     font-size: $text-xs;
                     max-width: 300px;
                     padding: 1.2rem;
+                    line-height: 2;
                 }
             }   
         }

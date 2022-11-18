@@ -1,38 +1,117 @@
 /*CONTACTO*/
 
-.form{
-    display: block;
-    width: 400px;
-    margin: 0 auto;
+.contacto {
 
-    .box1{
-        background-color: grey;
-        width: ($ancho/2);
-    }
-
-    .box2{
-        background-color: $blue;
-        width:($ancho/2)-350;
-    }
+    display: flex;
+    flex-flow: row;
+    gap: $sp-m;
+    padding-top: $sp-xl;
+    align-items: center;
     
-    .box3{
-        background-color: $green;
-        width: ($ancho/2)-150;
-    }
+    .column{
+        display: flex;
+        flex-flow: column;
+        margin: 0 0 $sp-m;
+        flex: 1 1 50%;
+        // justify-content: left;
 
-    .form__titulo{
-        text-align: center;
-    }
-    
-    .form__complete{
-        background-color: rgb(255, 255, 255);
-        text-align: left;
-        
-        .form__input{
-            background-color: rgba(255, 255, 255, 0.158);
+        .mensaje{
+            min-width: 300px;
+            flex: 1 1 0%;
+            align-self: flex-end;
             
+            .hm{
+                text-align: left;
+                font-size: $text-xl;
+                color: $second;
+            }
+            
+            .textm{
+                color: $primary;
+                font-size: $text-m;
+                font-weight: $primary;
+                text-align: left;
+                letter-spacing: 1px;
+                margin-top: $sp-m;
+                padding-right: $sp-m;
+                line-height: 24px;
+                max-width: 400px;
+                
+            }
+
+            .box1{
+                flex: 1 1 0%;
+                flex-wrap: wrap;
+
+                .links{
+                    text-decoration: none;
+                    color: $primary;
+                    font-size: 16px;
+                    padding: 1rem 0.2rem;
+                    display: flex;
+                }
+            }
         }
     }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        border-left: 2px solid $second;
+        padding-left: $sp-m;
+        flex: 1 1 50%;
+        align-self: flex-start;
+
+        .alinea{
+            display: flex;
+            flex-direction: row;
+            flex: 1 1 0%;
+            gap: $sp-m;
+
+            .column{
+                display: flex;
+                flex-flow: column;
+                margin: 0 0 $sp-m;
+                
+                
+            }
+        }
+
+        .btna{
+            background-color: $primary;
+            color: $second;
+            border: solid 1px $second;
+            border-radius: .3rem;
+            &:hover{
+                background-color: $primary;
+            }
+        }
+    }
+
+
 }
 
+
+/*MEDIA*/
+
+@media only screen and (max-width: 490px){
+
+    
+}
+
+@media only screen and (max-width: 635px){
+    
+}
+
+@media only screen and (max-width: 767px){
+    .contacto {
+        flex-wrap: wrap;
+    }
+    .mensaje{
+        font-size: .8em;
+    }
+    .links{
+        font-size: 1.5em;
+    }
+}
 

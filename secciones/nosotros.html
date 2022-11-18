@@ -14,110 +14,168 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
 
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="header__nav">           
-            <a href="#" class="animate__animated animate__backInDown">
-                <img src="../multimedia/logo_little.png"Logo empresa" class="header__logo"">
-            </a>
-            <ul class="header__menu">
-                <li class="header__col"><a class="header__anchor" href="../index.html">Home</a></li>
-                <li class="header__col"><a class="header__anchor" href="./cursos.html">Cursos</a></li>
-                <li class="header__col"><a class="header__anchor" href="./servicios.html">Servicios</a></li>
-                <li class="header__col"><a class="header__anchor" href="./nosotros.html"> Nosotros</a></li>
-                <li class="header__col"><a class="header__anchor" href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>        
+    <header id="headerbg">
+
+        <nav class="container navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html"><img src="../multimedia/logo_little.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./cursos.html">Cursos</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link" href="./servicios.html">
+                      Servicios
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
     </header>
     
 
-    <section class="vision">
-        <article class="vision__post">
-                    
-            <h2 class="vision__titulo">Nuestra Misión</h2>
-            <video class="vision__video" src="../Multimedia/olvidala.mp4" controls></video>
-            
-            <audio class="vision__audio" src="../Multimedia/yt1s.com - ACDC  Thunderstruck Official Video.mp3"controls></audio>
-            <p class="vision__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at saepe iure rerum quasi nihil consequuntur recusandae ullam! Molestias harum ad dolores quae minima voluptatibus, ipsa provident quod excepturi dignissimos odit expedita debitis, repudiandae repellendus reiciendis nisi laboriosam omnis. Nemo, dolor odio. Iure debitis voluptate quod, sint nobis laudantium reiciendis!
-            </p>
-            <a class="vision__anchor" target="_blank" href="https://es.tradingview.com/"> Ver Más</a>
+    <section class="mision">
+      <div class="container">
+        
+        <article class="mision__vision"  >
+          
+            <div class="mision__art">
+
+
+
+              <h2 class="h2">Nuestra Misión</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo at saepe iure rerum quasi nihil consequuntur recusandae ullam! Molestias harum ad dolores quae minima voluptatibus, ipsa provident quod excepturi dignissimos odit expedita debitis, repudiandae repellendus reiciendis nisi laboriosam omnis. Nemo, dolor odio. Iure debitis voluptate quod, sint nobis laudantium reiciendis!
+              </p>
+              <a class="boton--general btn btn-secondary" target="_blank" href="https://es.tradingview.com/"> Ver Más</a>
+
+            </div>  
+
+            <div>
+              
+              <video class="mision__video" src="../Multimedia/olvidala.mp4" controls></video>
+
+            </div>
 
         </article>
 
-        <article class="vision__post"> 
-            
-            <h2 class="vision__titulo">Nuestros Rendimientos</h2>
-            <img class="vision__visual" src="../Multimedia/nuestros_rendimientos.png" alt="">
-            <p class="vision__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, veritatis quos! Ipsa eveniet ducimus sapiente similique aut numquam aperiam modi, eos, dolor, tempora magni facilis dolores eaque ad consequuntur. Quisquam!
+        <article class="mision__rendimientos"> 
+            <div class="mision__text">
+
+              <h2 class="h2">Nuestros Rendimientos</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, veritatis quos! Ipsa eveniet ducimus sapiente similique aut numquam aperiam modi, eos, dolor, tempora magni facilis dolores eaque ad consequuntur. Quisquam!
                 
-            </p>
-            <a class="vision__anchor" target="_blank" href="https://unctad.org/news/global-trade-hits-record-high-285-trillion-2021-likely-be-subdued-2022"> Ver Más</a>
+              </p>
+              <a class="boton--general btn btn-secondary" target="_blank" href="https://unctad.org/news/global-trade-hits-record-high-285-trillion-2021-likely-be-subdued-2022"> Ver Más</a>
+
+            </div>
+
+            <figure>
+              <img class="mision__visual" src="../Multimedia/rendimientos-decrecientes.png" alt="">
+            </figure>
 
         </article>
 
-        <article class="vision__post">
+        <article class="mision__clientes">
+          <div class="mision__portafolio">
+            
+            <h2 class="h1"> Nuestros Clientes</h2>
+            
+            <a class="boton--general btn btn-secondary" target="_blank" href="https://www.ambito.com/"> Formá parte de nuestro portafolio</a>
 
-            <h2 class="vision__titulo"> Nuestros Clientes</h2>
-            <img class="vision__visual" src="../Multimedia/nuestros_clientes.png" alt="">
-            <p class="vision__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam laudantium natus ad aperiam atque porro facilis sunt culpa suscipit cupiditate debitis, harum neque illo, laboriosam, inventore eaque odit? Libero beatae nostrum quibusdam, nulla sunt commodi aspernatur assumenda odit, aperiam ex quasi consectetur doloribus ea veniam? Est impedit quibusdam aliquam omnis.
-            </p>
-            <a class="vision__anchor" target="_blank" href="https://www.ambito.com/"> Ver Más</a>
+          </div>
+
+            <figure class="mision__empresas container-fluid">
+              <img class="mision__empre" src="../multimedia/clientes-1.png" alt="">
+              <img class="mision__empre" src="../multimedia/clientes-2.png" alt="">
+              <img class="mision__empre" src="../multimedia/coca-1.png" alt="">
+            </figure>
 
         </article>
+
+      </div>
 
     </section>
 
 
 
     <footer>
-        <nav class="navbar">
-            
-            <a class="navbar__link" href=""> 
-                    <img class="navbar__logo" src="../multimedia/logo_little.png" alt="logo imagen">
-            </a>
+      <nav class="navbarra">
+          
+          <a class="navbarra__link" href=""> 
+                  <img class="navbarra__logo" src="../multimedia/logo_little.png" alt="logo imagen">
+          </a>
 
-            <div id="pie">
-                <ul class="navbar__redes">
-                    <li class="navbar__col">
-                        <a class="navbar__link" href="https://twitter.com/?lang=es">Twitter</a>
-                    </li>
-                    <li class="navbar__col">
-                        <a class="navbar__link" href="https://www.instagram.com/">Instagram</a>
-                    </li>
-                    <li class="navbar__col">
-                        <a class="navbar__link" href="https://www.facebook.com/">Facebook</a>
-                    </li>
-                    <li class="navbar__col">
-                        <a class="navbar__link" href="https://www.linkedin.com">Linkedin</a>
-                    </li>
-                    <li class="navbar__col">
-                        <a class="navbar__link" href="https://mail.google.com/mail">Email</a>
-                    </li>
-                </ul>
-                <ul class="navbar__info">
-                    <li class="navbar__col">
-                        <a class="navbar__link" href="../index.html">Home</a>
-                    </li>
-                    <li class="navbar__col">
-                        <a class="navbar__link" href="./cursos.html">Cursos</a>
-                    </li>
-                    <li class="navbar__col">
-                        <a class="navbar__link" href="./servicios.html">Servicios</a>
-                    </li>
-                    <li class="navbar__col">
-                        <a class="navbar__link" href="./nosotros.html">Nosotros</a>
-                    </li>
-                    <li class="navbar__col">
-                        <a class="navbar__link" href="./contacto.html">Contacto</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+          <div id="pie">
+              <ul class="navbarra__redes">
+                  <li class="navbarra__col">
+                      <a class="navbarra__link" href="https://twitter.com/?lang=es">Twitter</a>
+                  </li>
+                  <li class="navbarra__col">
+                      <a class="navbarra__link" href="https://www.instagram.com/">Instagram</a>
+                  </li>
+                  <li class="navbarra__col">
+                      <a class="navbarra__link" href="https://www.facebook.com/">Facebook</a>
+                  </li>
+                  <li class="navbarra__col">
+                      <a class="navbarra__link" href="https://www.linkedin.com">Linkedin</a>
+                  </li>
+                  <li class="navbarra__col">
+                      <a class="navbarra__link" href="https://mail.google.com/mail">Email</a>
+                  </li>
+              </ul>
+              <ul class="navbarra__info">
+                  <li class="navbarra__col">
+                      <a class="navbarra__link" href="../index.html">Home</a>
+                  </li>
+                  <li class="navbarra__col">
+                      <a class="navbarra__link" href="./cursos.html">Cursos</a>
+                  </li>
+                  <li class="navbarra__col">
+                      <a class="navbarra__link" href="./servicios.html">Servicios</a>
+                  </li>
+                  <li class="navbarra__col">
+                      <a class="navbarra__link" href="./nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="navbarra__col">
+                      <a class="navbarra__link" href="./contacto.html">Contacto</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
 
-        
+      
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

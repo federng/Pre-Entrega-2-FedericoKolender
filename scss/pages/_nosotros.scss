@@ -1,61 +1,105 @@
 /*NOSOTROS*/
 
-.vision{
-    display: block;
-    width: 400px;
-    margin: 0 auto;
+.mision{
+    font-family: 'Poppins', sans-serif;
+    background-color: $primary;
+    color: $accent;
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: $sp-xl;
 
-    .vision__post{
-        background-color: rgba(32, 32, 32, 0.11);
-        margin: 1rem 0;
-        border-radius: 2rem;
-        padding: 1rem 0;
+
+        .mision__vision{
+            display: flex;
+            flex-flow: row;
+            gap: $sp-s;
+            padding: $sp-m;
+            border-top: 2px solid #F0B90B;
+            margin-top: 5rem;
+    
+            .mision__art{
+                align-self: center;
+                text-align: center;
+                font-size: 1.5em;
+            }
+    
+            .mision__video{
+                width: 100%;
+                padding: $sp-xs;
+                overflow: hidden;
+            }
+
         
+        }
     
-    }
+        .mision__rendimientos{
+             display: flex;
+             flex-direction: row-reverse;
+             border-top: 2px solid #F0B90B;
+             border-bottom: 2px solid #F0B90B;
+             padding: $sp-m;
+             margin-bottom: 5rem;
+             .mision__text{
+                align-self: center;
+                text-align: center;
+                font-size: 1.5em;
+            }
+             
+             .mision__visual{
+                width: 100%;
+                padding: $sp-m;
+             }
     
-    .vision__titulo{
-        text-align: center;
-        font-size: 2rem;
-        margin-top: 1rem;
-        font-family: 'Inria Serif', serif;
-    }
-
-    .vision__visual{
-        width: 400px;
-        padding: 1rem;
-    }
-    
-    .vision__video{
-        width: 400px;
-        padding: 1rem;
+        }
         
-    }
-    
-    .vision__audio{
-        display: block;
-        width: 400px;
-        padding: 1rem;
-    }
-    
-    .vision__desc{
-        text-align: center;
-        padding: 2rem;
-        font-family: 'Montserrat', sans-serif; ;
-    
-    }
+        .mision__clientes{
+            background-image: url(../../multimedia/banner-clientes.png);
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: $sp-m;
+            font-size: 1.5em;
+            padding: $sp-m;
+            margin-bottom: 5rem;
+            
     
     
-    .vision__anchor{
-        position: relative;
-        left: 170px;
-        bottom: 5px;
-        text-decoration: none;
-        background-color: white;
-        border: solid 0.4rem white;
-        border-radius: 1rem;
-        color: blue;
+            .mision__empresas{
+                display: flex;
+                flex-direction: row;
+                align-self: stretch;
+                justify-content: space-between;
+                
+                
+                .mision__empre{
+                   width: 150px;
+                }
+            }
+        }
     }
 
+    
+
+}
+
+/*MEDIA*/
+
+@media only screen and (max-width: 490px){
+
+}
+
+@media only screen and (max-width: 635px){
+
+}
+
+@media only screen and (max-width: 767px){
+    
+}
+
+@media only screen and (max-width: 991px){
+    
 }
 

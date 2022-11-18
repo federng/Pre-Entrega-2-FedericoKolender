@@ -1,7 +1,9 @@
 /* SERVICIOS */
 
 #backone{
-    background-color: var(--primary);
+    background-color: $primary;
+    color: $accent;
+    width: 100%;
 
     .servicios__element{
         display: flex;
@@ -10,15 +12,55 @@
         align-content: center;
         justify-content: center;
         align-items: center;
-        color: var(--accent);
-
+        padding: 5rem;
+        
+        .servicios__titulo{
+            font-size: $text-m;
+            color: $second;
+        }
+        .service-img{
+            width: 100%;
+        }
         .servicios__parrafo{
             text-align: center;
-            color: var(--accent);
-            font-size: var(--text-xs);
-            max-width: 300px;
+            color: $accent;
+            font-size: $text-s;
+            max-width: 500px;
             padding: 1.2rem;
+            line-height: 2;
         }
     }
 
+    
+}
+
+/*MEDIA*/
+
+@media only screen and (max-width: 490px){
+
+    .servicios__titulo{
+        font-size: $text-s;
+        color: $second;
+    }
+    
+    .servicios__parrafo{
+
+        font-size: $text-xs;
+        max-width: 300px;
+        padding: 1.2rem;
+        line-height: 1.5;
+    }
+    
+}
+
+@media only screen and (max-width: 635px){
+
+}
+
+@media only screen and (max-width: 767px){
+    
+}
+
+@media only screen and (max-width: 991px){
+    
 }
