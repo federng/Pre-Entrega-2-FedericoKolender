@@ -28,6 +28,7 @@
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <link rel="stylesheet" href="./estilos/css/bootstrap.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -93,15 +94,17 @@
         <!-- MENU PRINCIPAL CON GRID -->
 
         <section class="bg_primary">
-            <div id="infocurso" class="container" >
-                <article class="infocurso__box1 ">
+            <div id="infocurso" class="container" data-aos="fade-up"
+            data-aos-duration="3000" >
+                <article class="infocurso__box1  ">
                     <h1 class="infocurso__h1">Construye tu base de inversión </h1>
                     <p class="infocurso__parrafo">
                         Acceso instantáneo a la inversión, en cualquier momento y en cualquier lugar Invertir nunca ha sido tan fácil. Todo lo que buscas en una plataforma de inversión definitiva
                     </p>
                     <a class="boton--general btn btn-secondary" href="http://bullmarket.com.ar" target="_blank" rel="noopener noreferrer">VER CURSOS</a>
                 </article>
-                <article class="infocurso__box2 container">
+                <article class="infocurso__box2 container  " data-aos="fade-up"
+                data-aos-duration="3000" >
                     <figure class="infocurso__integral">
                         <img class="infocurso__integral--1" src="./multimedia/curso_integral.png" alt="">
                     </figure>
@@ -204,5 +207,10 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
 </body>
 </html>
