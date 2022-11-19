@@ -133,14 +133,17 @@ body {
 }
 .navbarra #pie {
   display: flex;
+  padding: 2rem;
 }
 .navbarra #pie .navbarra__redes {
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
+  border-right: 2px solid #F0B90B;
 }
 .navbarra #pie .navbarra__redes .navbarra__col {
   list-style-type: none;
+  padding: 0.5rem;
   transition: all 0.3s ease-in-out;
   border-radius: 0.2rem;
 }
@@ -152,6 +155,17 @@ body {
   display: flex;
   flex-flow: column wrap;
   gap: 0.8rem;
+  padding: 0.5rem;
+}
+.navbarra #pie .navbarra__info .navbarra__col {
+  list-style-type: none;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  border-radius: 0.2rem;
+}
+.navbarra #pie .navbarra__info .navbarra__col .navbarra__col:hover {
+  background-color: #F0B90B;
+  color: #ffffff;
 }
 .navbarra .navbarra__cr {
   background-color: blueviolet;
@@ -869,28 +883,53 @@ body {
   width: 100%;
   padding: 3.2rem;
 }
-.mision .container .mision__clientes {
-  background-image: url(../../multimedia/banner-clientes.png);
+.mision .container .mision__portafolio {
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: center;
-  gap: 3.2rem;
-  font-size: 1.5em;
-  padding: 3.2rem;
-  margin-bottom: 5rem;
+  align-items: center;
+  gap: 0.8rem;
 }
-.mision .container .mision__clientes .mision__empresas {
-  display: flex;
-  flex-direction: row;
-  align-self: stretch;
-  justify-content: space-between;
+.mision .container .mision__portafolio .hm {
+  color: #F0B90B;
+  padding: 2rem;
 }
-.mision .container .mision__clientes .mision__empresas .mision__empre {
+.mision .container .mision__portafolio .mision__tmn {
   width: 150px;
+  padding: 0.5rem;
+}
+
+img {
+  width: 100%;
+}
+
+.hm {
+  color: #F0B90B;
+  padding: 2rem;
+}
+
+.ptext--m {
+  line-height: 2;
 }
 
 /*MEDIA*/
+@media only screen and (max-width: 635px) {
+  .mision__vison {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .mision .container .mision__vision {
+    display: flex;
+    flex-direction: column;
+  }
+  .mision .container .mision__vision .text-modif {
+    min-width: 250px;
+  }
+  .mision .container .mision__rendimientos {
+    flex-direction: column;
+  }
+}
 /* SERVICIOS */
 #backone {
   background-color: #201F1F;

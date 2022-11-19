@@ -53,36 +53,47 @@
              }
     
         }
-        
-        .mision__clientes{
-            background-image: url(../../multimedia/banner-clientes.png);
-            display:flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            gap: $sp-m;
-            font-size: 1.5em;
-            padding: $sp-m;
-            margin-bottom: 5rem;
+
+        .mision__portafolio{
             
-    
-    
-            .mision__empresas{
-                display: flex;
-                flex-direction: row;
-                align-self: stretch;
-                justify-content: space-between;
-                
-                
-                .mision__empre{
-                   width: 150px;
-                }
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            gap: .8rem;
+
+            .hm{
+                color: $second;
+                padding: 2rem;
             }
+
+            .mision__tmn{
+                width: 150px;
+                padding: .5rem;
+                
+            }
+
         }
+        
+        
     }
 
     
 
+}
+
+img{
+    width: 100%;
+    
+}
+
+.hm{
+    color: $second;
+    padding: 2rem;
+}
+
+.ptext--m{
+    line-height: 2;
 }
 
 /*MEDIA*/
@@ -92,11 +103,23 @@
 }
 
 @media only screen and (max-width: 635px){
-
+    .mision__vison{
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 767px){
-    
+    .mision .container .mision__vision{
+        display: flex;
+        flex-direction: column;
+        .text-modif{
+            min-width: 250px;
+        }
+    }
+
+    .mision .container .mision__rendimientos{
+        flex-direction: column;
+    }
 }
 
 @media only screen and (max-width: 991px){

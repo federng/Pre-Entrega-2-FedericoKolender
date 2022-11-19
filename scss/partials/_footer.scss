@@ -23,14 +23,17 @@
 
     #pie{
         display: flex;
+        padding: 2rem;
     
         .navbarra__redes{
             display: flex;
             flex-direction: column;
             gap: .8rem;
+            border-right: 2px solid #F0B90B;
 
             .navbarra__col{
                 list-style-type: none;
+                padding: .5rem;
                 transition: all .3s ease-in-out;
                 border-radius: .2rem;
 
@@ -47,6 +50,19 @@
             display: flex;
             flex-flow: column wrap;
             gap: .8rem;
+            padding: .5rem;
+
+            .navbarra__col{
+                list-style-type: none;
+                padding: .5rem;
+                transition: all .3s ease-in-out;
+                border-radius: .2rem;
+
+                .navbarra__col:hover{
+                    background-color: $second;
+                    color: $accent;
+                }
+            }
         }
    
     }
