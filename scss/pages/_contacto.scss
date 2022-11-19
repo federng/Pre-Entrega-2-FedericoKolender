@@ -1,5 +1,9 @@
 /*CONTACTO*/
 
+#contme{
+    background-color: $primary;
+    color: $accent;
+}
 .contacto {
 
     display: flex;
@@ -16,19 +20,19 @@
         // justify-content: left;
 
         .mensaje{
-            min-width: 300px;
+            // min-width: 300px;
             flex: 1 1 0%;
             align-self: flex-end;
             
             .hm{
                 text-align: left;
-                font-size: $text-xl;
+                // font-size: $text-xl;
                 color: $second;
             }
             
             .textm{
-                color: $primary;
-                font-size: $text-m;
+                // color: $primary;
+                // font-size: $text-m;
                 font-weight: $primary;
                 text-align: left;
                 letter-spacing: 1px;
@@ -45,8 +49,8 @@
 
                 .links{
                     text-decoration: none;
-                    color: $primary;
-                    font-size: 16px;
+                    color: $accent;
+                    // font-size: 16px;
                     padding: 1rem 0.2rem;
                     display: flex;
                 }
@@ -77,15 +81,25 @@
             }
         }
 
-        .btna{
-            background-color: $primary;
-            color: $second;
-            border: solid 1px $second;
-            border-radius: .3rem;
-            &:hover{
+        .esbtn{
+            align-self: center;
+            padding: $sp-m;
+            
+            .btncont{
                 background-color: $primary;
+                color: $second;
+                border: solid 1px $second;
+                border-radius: $sp-xl;
+                padding: 4rem;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    background-color: $primary;
+                    padding: 50px;
+                }
             }
+
         }
+
     }
 
 
@@ -95,12 +109,15 @@
 /*MEDIA*/
 
 @media only screen and (max-width: 490px){
-
+    
+    
     
 }
 
-@media only screen and (max-width: 635px){
-    
+@media only screen and (max-width: 572px){
+    .alinea{
+        flex-wrap: wrap;
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -113,5 +130,7 @@
     .links{
         font-size: 1.5em;
     }
+
+    
 }
 

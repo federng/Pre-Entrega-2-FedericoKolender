@@ -442,6 +442,11 @@ body {
   }
 }
 /*CONTACTO*/
+#contme {
+  background-color: #201F1F;
+  color: #ffffff;
+}
+
 .contacto {
   display: flex;
   flex-flow: row;
@@ -456,18 +461,14 @@ body {
   flex: 1 1 50%;
 }
 .contacto .column .mensaje {
-  min-width: 300px;
   flex: 1 1 0%;
   align-self: flex-end;
 }
 .contacto .column .mensaje .hm {
   text-align: left;
-  font-size: 4em;
   color: #F0B90B;
 }
 .contacto .column .mensaje .textm {
-  color: #201F1F;
-  font-size: 2.2em;
   font-weight: #201F1F;
   text-align: left;
   letter-spacing: 1px;
@@ -482,8 +483,7 @@ body {
 }
 .contacto .column .mensaje .box1 .links {
   text-decoration: none;
-  color: #201F1F;
-  font-size: 16px;
+  color: #ffffff;
   padding: 1rem 0.2rem;
   display: flex;
 }
@@ -506,17 +506,29 @@ body {
   flex-flow: column;
   margin: 0 0 3.2rem;
 }
-.contacto .formulario .btna {
+.contacto .formulario .esbtn {
+  align-self: center;
+  padding: 3.2rem;
+}
+.contacto .formulario .esbtn .btncont {
   background-color: #201F1F;
   color: #F0B90B;
   border: solid 1px #F0B90B;
-  border-radius: 0.3rem;
+  border-radius: 8rem;
+  padding: 4rem;
+  transition: all 0.3s ease-in-out;
 }
-.contacto .formulario .btna:hover {
+.contacto .formulario .esbtn .btncont:hover {
   background-color: #201F1F;
+  padding: 50px;
 }
 
 /*MEDIA*/
+@media only screen and (max-width: 572px) {
+  .alinea {
+    flex-wrap: wrap;
+  }
+}
 @media only screen and (max-width: 767px) {
   .contacto {
     flex-wrap: wrap;
